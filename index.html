@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Generator</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .container { max-width: 600px; margin: 0 auto; }
+        label, input, textarea, button { display: block; width: 100%; margin-bottom: 10px; }
+        #output-bio { border: 1px solid #ccc; padding: 10px; min-height: 100px; white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Social Media Profile Generator</h1>
+
+        <label for="userName">User Name:</label>
+        <input type="text" id="userName">
+
+        <label for="bioText">Bio Text:</label>
+        <textarea id="bioText" rows="4"></textarea>
+
+        <label for="interests">Interests (comma-separated):</label>
+        <input type="text" id="interests">
+
+        <button id="generateBtn">Generate Profile</button>
+
+        <h2>Generated Bio:</h2>
+        <div id="output-bio"></div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
